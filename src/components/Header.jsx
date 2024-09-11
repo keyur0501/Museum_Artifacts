@@ -1,24 +1,26 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import damru from "../assets/Damru.png";
+import Swayambhu from "../assets/Swayambhu.png";
 
 const Header = () => {
   return (
     <>
-      <div className=" bg-blue-50">
-        <div className="header flex justify-between items-center m-auto container ">
-          <div className="logo flex ">LOGO</div>
-          <div className="navbar">
-            <ul className="flex gap-3">
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact Us</Link>
-              </li>
-            </ul>
+      <header className=" bg-blue-50 w-full">
+        <div className="container mx-auto px-4  ">
+          <div className="flex justify-between items-center py-4">
+            <div className="logo flex w-20 h-10 ">
+              <img src={damru} alt="" />
+              <img src={Swayambhu} alt="" />
+            </div>
+            <nav className="navbar">
+              <Link to="/" className="text-blue-600 hover:underline">
+                Home
+              </Link>
+            </nav>
           </div>
         </div>
-      </div>
+      </header>
       <Outlet />
     </>
   );

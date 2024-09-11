@@ -17,14 +17,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="donate">
-      <div className="container flex justify-center items-center">
+    <div className="donate text-black">
+      <div className=" flex justify-center items-center">
         <form
           onSubmit={handleSubmit}
           className=" flex flex-col gap-10 h-[500px] w-[450px] p-10 m-12 border border-black rounded-lg"
         >
           <h1 className=" text-2xl">Do You Have Any Questions? </h1>
-          <div className=" flex flex-col gap-5">
+          <div className="flex flex-col gap-5">
             <div className="fields">
               <label htmlFor="fullname">Full Name</label>
               <input
