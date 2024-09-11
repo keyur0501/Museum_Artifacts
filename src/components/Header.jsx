@@ -10,8 +10,9 @@ const Header = () => {
         <div className="container mx-auto px-4  ">
           <div className="flex justify-between items-center py-4">
             <div className="logo flex w-20 h-10 ">
-              <img src={damru} alt="" />
-              <img src={Swayambhu} alt="" />
+              {/* <img src={damru} alt="" />
+              <img src={Swayambhu} alt="" /> */}
+              logo
             </div>
             <nav className="navbar">
               <Link to="/" className="text-blue-600 hover:underline">
