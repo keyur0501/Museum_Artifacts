@@ -1,0 +1,26 @@
+.container {
+  width: 1240px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+ul li {
+  color: black;
+  padding: 16px 10px;
+  cursor: pointer;
+}
+
+input {
+  background-color: #858a98;
+  padding: 12px 12px;
+  width: 100%;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 4;
+}
