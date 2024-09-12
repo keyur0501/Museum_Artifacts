@@ -1,7 +1,7 @@
 import React from "react";
 import { articfacts } from "../constants";
 import { useParams } from "react-router-dom";
-import Modal from "./Modal";
+import Contact from "./Contact";
 
 const ArtiDetails = () => {
   const params = useParams();
@@ -40,7 +40,7 @@ const ArtiDetails = () => {
           <span>Download</span>
         </a>
         <button className="border bg-blue-600 ml-auto p-3 rounded-lg text-white">
-          <Modal />
+          <Contact />
         </button>
       </div>
     </div>

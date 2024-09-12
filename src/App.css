@@ -14,20 +14,20 @@ ul li {
   cursor: pointer;
 }
 
-input {
-  background-color: #858a98;
-  padding: 12px 12px;
-  width: 100%;
-  color: white;
-  border-radius: 10px;
-  outline: none;
-}
-
 .fields {
-  color: black;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
-  gap: 4;
+}
+
+input,
+textarea {
+  background-color: white;
+  padding: 12px 12px;
+  width: 100%;
+  color: black;
+  border-radius: 10px;
+  outline: none;
 }
 
 .modal,
@@ -53,8 +53,6 @@ input {
   background: #f1f1f1;
   padding: 14px 28px;
   border-radius: 3px;
-  max-width: 600px;
-  min-width: 300px;
 }
 
 .close-modal {
