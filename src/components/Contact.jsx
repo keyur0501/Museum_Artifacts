@@ -3,7 +3,7 @@ import "react-toastify/dist/ReactToastify.css";
 import React, { useState } from "react";
 
 const Contact = () => {
-  const [values, setValues] = useState({
+  const [formData, setFromData] = useState({
     fullname: "",
     email: "",
     amount: "",
@@ -11,13 +11,13 @@ const Contact = () => {
   });
 
   const handleChange = (e) => {
-    setValues({ ...values, [e.target.name]: [e.target.value] });
+    setFromData({ ...formData, [e.target.name]: [e.target.value] });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values);
-    setValues("");
+    console.log(formData);
+    setFromData("");
     toggleModal();
   };
 
